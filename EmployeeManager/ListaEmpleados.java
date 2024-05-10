@@ -16,7 +16,7 @@ public class ListaEmpleados {
             
         }
     }
-    
+    //Metodo que elimina a un empleado de la lista 
     public void eliminarEmpleado(String nombreEmpleadoBuscar) {
 
         int i = 0;
@@ -36,7 +36,7 @@ public class ListaEmpleados {
         System.out.println("Empleado no encontrado");
     }
 
-
+    //Metodo que busca a un empelado en la lista a traves de su nombre
     public void buscarEmpleadoPorNombre(String nombreEmpleadoBuscar) {
         int i = 0;
         boolean empleadoEncontrado = false;
@@ -52,7 +52,7 @@ public class ListaEmpleados {
         System.out.println("Empleado no encontrado");
         
     }
-
+    //Metodo que acutaliza la informacion del empleado a traves del nombre del empleado
     public void actualizarInfoEmpleado(String nombre) {
         boolean opcionValida = false;
         Empleado empleadoEncontrado = obtenerEmpleadoPorNombre(nombre);
@@ -92,7 +92,9 @@ public class ListaEmpleados {
     }
     
     
-    //Metodo privada para poder obtener la referencia a un objeto de la lista que sea empleado, de esta forma no se llena todo de bucles
+    /*Metodo privada para poder obtener la referencia a un objeto de la lista que sea empleado, de esta forma no se llena todo de bucles
+     Usado en el metodo actualizarInfoEmpleado();
+    */
     private Empleado obtenerEmpleadoPorNombre(String nombreEmpleado){
         int i = 0;
         boolean empleadoEncontrado = false;
@@ -108,7 +110,7 @@ public class ListaEmpleados {
         System.out.println("Empleado no encontrado");
     return null; }
 
-
+    //Metodo que devuelve el gasto total de la empresa dedicado a salarios
     public void informeSalarialTotal(){
         double salarioTotalEmpresa = 0.0;
         for (Empleado empleado : lista_trabajadores) {

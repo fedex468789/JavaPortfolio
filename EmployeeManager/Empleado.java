@@ -5,7 +5,7 @@ public class Empleado {
     double salario;
     char genero;
     double antiguedad;
-
+    //Constructor parametrizada
     public Empleado(String nombre, String puesto, int edad, double salario, char genero, double antiguedad) {
         this.nombre = nombre;
         this.puesto = puesto;
@@ -14,11 +14,11 @@ public class Empleado {
         this.genero = genero;
         this.antiguedad = antiguedad;
     }
-
+    //Constructor sin parametros
     public Empleado() {
 
     }
-
+    //Getters and Setters
     public String getNombre() {
         return nombre;
     }
@@ -49,6 +49,8 @@ public class Empleado {
     public void setGenero(char genero) {
         this.genero = genero;
     }
+
+    //Metodo To Strings 
 
     @Override
     public String toString() {
