@@ -63,11 +63,4 @@ public class Order {
     public String toString() {
         return "Order Owner: " + this.orderOwner + " , ship status: " + this.status + " , original owner is: " + this.originalOwner + " , product list: " + this.productList;
     }
-
-        
-
-
-
-
-
 }

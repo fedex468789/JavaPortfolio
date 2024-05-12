@@ -77,10 +77,4 @@ public class Client {
     public String getClientInfo(){
         String info = "Name: " + this.name + " , adress: " + this.addres + " , ID: " + this.clientID + " , phonenumbre: " + this.phoneNumber + " and the order is: " + clientOrder;
     return info;}
-
-
-
-    
-
-    
 }
